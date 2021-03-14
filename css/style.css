@@ -1,4 +1,4 @@
-/* GENERAL --------------------------------------------------------------------------*/
+/* GENERAL ------------------------------------------- */
 *{
     margin:0;
     padding:0;
@@ -8,6 +8,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    font-weight: 700;
     color: #707070;
     background: #141922;
     height: 100vh;
@@ -15,6 +16,10 @@ body{
 h1{
     color: #fff;
     font-size:24px;
+}
+h2{
+    font-size: 14px;
+    text-transform: uppercase;
 }
 a{
     text-decoration: none;
@@ -25,7 +30,8 @@ list-style: none;
 }
 
 
-/* UTILITIES ----------------------------------------------------------------------- */
+/*
+ UTILITIES ----------------------------------------- */
 .flex{
     display: flex;
 }
@@ -51,27 +57,97 @@ list-style: none;
 .lightgrey{
     color:#c1c1c1;
 }
-
-
-/* MAIN CONTENT ######################################################################### */
-
-/* ASIDE -----------------------------------------*/
-.aside{
-    width: 230px;
-    height: calc(100vh - 80px);
+.uppercase{
+    text-transform: uppercase;
 }
 
+/* MAIN CONTENT ################################# */
 
+/* ASIDE ********************************************/
+.aside{
+    min-width: 230px;
+    height: calc(100vh - 80px);
+}
+/* Aside Logo ------------------------------------ */
+.aside .logo{
+    line-height: 90px;
+}
+.aside .logo img{
+    margin-left: 20px;
+    vertical-align: middle;
+    width: 130px;
+}
+/* Nav ---------------------------------------------*/
+.nav .menu-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+.nav img{
+    margin-left: 20px;
+    width: 25px;
+}
+.nav li{
+    padding: 5px 0;
+}
+.nav li a:hover{
+    color: #fff;
+    border-left: 3px solid #adff2f;
+}
+.nav span{
+    margin-left: 10px;
+}
 
+/* PLAYLIST -----------------------------------------*/
+.playlist{
+    padding: 20px;
+}
+.playlist li{
+    margin: 15px 0px;
+}
+.playlist li:last-child{
+    margin-bottom:0;
+}
+.playlist .add{
+    display: flex;
+    align-items: center;
+}
+.playlist .add div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    width: 35px;
+    height: 35px;
+    color: #000;
+    background: #959595;
+}
+.playlist .add span{
+    margin-left: 10px;
+}
+.playlist li a:hover{
+    color: #fff;
+}
+.playlist li:first-child a:hover div{
+    background: #fff;
+}
 
+/* LOGIN -----------------------------------------*/
+.login{
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
-/* ALBUM ----------------------------------------- */
+}
+
+/* ALBUM ############################################# */
 .album{
     width: 100%;
     height: calc(100vh - 80px);
+    overflow-y: auto;
 }
 
-/* Upgrade */
+/* Upgrade -------------------------------------------*/
 .album .upgrade{
     position: absolute;
     width: 100%;
@@ -81,35 +157,32 @@ list-style: none;
 }
 .album .upgrade .button {
     text-transform: uppercase;
-    font-weight: 700;
     color: #fff;
     border: 1px solid #fff;
     padding: 10px 40px;
     border-radius: 30px;
     min-width: 220px;
     margin-right: 10px;
-    transition: transform .2s; /* Animation */
+    transition: .2s; /* Animation */
 }
 .album .upgrade .button:hover{
     font-size: 15px;
 }
 
-/* Album-content */
+/* Album-content --------------------------------------- */
 .album-content{
     margin-top: 90px;
     padding:20px;
 }
 
-/* Album-menu */
+/* Album-menu ------------------------------------------- */
 .album-menu{
     display: flex;
     justify-content: center;
-    
 }
 .album-content li{
     display: inline;
     text-align: center;
-    font-weight: 700;
     text-transform: uppercase;
     margin-right: 10px;
     padding-bottom: 5px;
@@ -117,28 +190,55 @@ list-style: none;
 .album-content li:last-child{
     margin-right: 0;
 }
-.album-content li:hover{
-    color: #c1c1c1;
+.album-content li a:hover{
+    color: #fff;
     border-bottom: 1px solid #adff2f;
+}
+
+/* Album menu ----------------------------------------- */
+.album-content .recently-played h1{
+    margin: 30px 0;
 }
 
 
 
 
 
-/* PLAYER ######################################################################### */
+/* PLAYER ########################################### */
 .player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 90px;
 }
 
+.player .song-played{
+    width: 240px;
+    height: 50px;
+    margin-left: 10px;
+    background: gray;
+}
+
+.player .reproduction{
+    width: 530px;
+    height: 75px;
+    background: gray;
+}
+
+.player .volume{
+    width: 240px;
+    height: 50px;
+    margin-right: 10px;
+    background: gray;
+}
 
 
-/* ####################################################################################### 
-   MEDIA QUERY ###########################################################################
-##########################################################################################*/
+/* ##################################################### 
+   MEDIA QUERY #########################################
+########################################################*/
 /* SMARTPHONE XS */
-@media screen and (min-width: 550px and max-width:600px){
+@media screen and (min-width: 550px){
     /* ASIDE */
     .aside-menu {
         width: 40px;
