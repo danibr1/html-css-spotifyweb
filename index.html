@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Web</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css' integrity='sha512-9iWaz7iMchMkQOKA8K4Qpz6bpQRbhedFJB+MSdmJ5Nf4qIN1+5wOVnzg5BQs/mYH3sKtzY+DOgxiwMz8ZtMCsw==' crossorigin='anonymous'/>
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="relative">
+    <!-- MAIN -->
+    <main class="main-content flex">
+      
+        <!-- ASIDE -->
+        <aside class="aside bg-aside">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">
+                    <img src="./img/logo.svg" alt="Spotify">
+                </a>
+            </div>
+
+            <!-- Nav -->
+            <div class="nav"></div>
+
+            <!-- Playlist -->
+            <div class="playlist"></div>
+
+            <!-- Login -->
+            <div class="login"></div>
+        </aside>
+        
+        
+        <!-- ALBUM SECTION -->
+        <section class="album bg-album relative">
+            <!-- Upgrade -->
+            <div class="upgrade">
+                <a class="button" href="#">
+                    effettua l'upgrade
+                </a>     
+            </div>
+
+            <!-- Album content -->
+            <div class="album-content">
+                <!-- Album menu -->
+                <div class="album-menu flex">
+                    <ul>
+                        <li>
+                            <a href="#">in evidenza</a>
+                        </li>
+                        <li>
+                            <a href="#">podcast</a>
+                        </li>
+                        <li>
+                            <a href="#">classifiche</a>
+                        </li>
+                        <li>
+                            <a href="#">generi e moood</a>
+                        </li>
+                        <li>
+                            <a href="#">nuove uscite</a>
+                        </li>
+                        <li>
+                            <a href="#">scopri</a>
+                        </li>
+                    </ul>
+                </div>
+        
+                <!-- Recently-played -->
+                <div class="recently-played"></div>
+        
+                <!-- Created-for -->
+                <div class="created"></div>
+        
+                <!-- Popular-artist -->
+                <div class="popular-art"></div>
+            </div>
+        </section>
+              
+    </main>
+
+    <!-- FOOTER / PLAYER -->
+    <footer class="player bg-player relative">
+        <!-- Song-played -->
+        <div class="song-played"></div>
+
+        <!-- Reproduction -->
+        <div class="reproduction"></div>
+
+        <!-- Volume -->
+        <div class="volume"></div>
+
+    </footer>
+</body>
+</html>
