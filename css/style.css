@@ -21,6 +21,9 @@ h2{
     font-size: 14px;
     text-transform: uppercase;
 }
+h3{
+    color: #fff;
+}
 a{
     text-decoration: none;
     color: #7d7f84;
@@ -178,6 +181,7 @@ list-style: none;
 /* Album-menu ------------------------------------------- */
 .album-menu{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .album-content li{
@@ -196,9 +200,28 @@ list-style: none;
 }
 
 /* Album menu ----------------------------------------- */
-.album-content .recently-played h1{
-    margin: 30px 0;
+.album-content h1{
+    margin: 2rem 0;
 }
+.recently-played{
+    display: flex;
+}
+
+.recently-played .col{
+    width: calc((100% / 6) - 20px);
+    margin-right: 1rem;
+    text-align: center;
+}
+
+.recently-played .album{
+    /* height: 80%; */
+}
+
+.recently-played .album img{
+    width: 100%;
+}
+
+
 
 
 
