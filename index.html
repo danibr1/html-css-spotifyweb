@@ -19,7 +19,7 @@
     <main class="main-content flex">
       
         <!-- ASIDE -->
-        <aside class="aside bg-aside">
+        <aside class="aside bg-aside relative">
             <!-- Logo -->
             <div class="logo">
                 <a href="#">
@@ -28,23 +28,61 @@
             </div>
 
             <!-- Nav -->
-            <div class="nav"></div>
-
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a class="menu-nav" href="#">
+                            <img src="./img/home.svg" alt="home">
+                            <span class="txt-white">Home</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-nav" href="#">
+                            <img src="./img/search.svg" alt="search">
+                            <span>Cerca</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-nav" href="#">
+                            <img src="./img/libreria.svg" alt="libreria">
+                            <span>La tua Libreria</span> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <!-- Playlist -->
-            <div class="playlist"></div>
+            <div class="playlist">
+                <h2 class="txt-white uppercase">playlist</h2>
+                <ul>
+                    <li>
+                        <a class="add" href="#"> <!-- Crea Playlist -->
+                            <div class="txt-lightgrey">+</div>
+                            <span>Crea Playlist<span>
+                        </a>
+                    </li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                </ul>
+            </div>
 
             <!-- Login -->
-            <div class="login"></div>
+            <div class="login">
+                LOGIN
+            </div>
         </aside>
         
         
         <!-- ALBUM SECTION -->
         <section class="album bg-album relative">
+
             <!-- Upgrade -->
             <div class="upgrade">
-                <a class="button" href="#">
-                    effettua l'upgrade
-                </a>     
+                <a class="button" href="#">effettua l'upgrade</a>     
             </div>
 
             <!-- Album content -->
@@ -74,7 +112,12 @@
                 </div>
         
                 <!-- Recently-played -->
-                <div class="recently-played"></div>
+                <div class="recently-played">
+                    <h1>Recently played</h1>
+                    <div class="col">
+
+                    </div>
+                </div>
         
                 <!-- Created-for -->
                 <div class="created"></div>
@@ -88,6 +131,7 @@
 
     <!-- FOOTER / PLAYER -->
     <footer class="player bg-player relative">
+
         <!-- Song-played -->
         <div class="song-played"></div>
 
