@@ -5,181 +5,200 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <!-- ICONS -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css' integrity='sha512-9iWaz7iMchMkQOKA8K4Qpz6bpQRbhedFJB+MSdmJ5Nf4qIN1+5wOVnzg5BQs/mYH3sKtzY+DOgxiwMz8ZtMCsw==' crossorigin='anonymous'/>
-    <!-- MAIN STYLE -->
+     <!-- FONTS -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+     <!-- ICONS -->
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css' integrity='sha512-9iWaz7iMchMkQOKA8K4Qpz6bpQRbhedFJB+MSdmJ5Nf4qIN1+5wOVnzg5BQs/mYH3sKtzY+DOgxiwMz8ZtMCsw==' crossorigin='anonymous'/>
+    <!-- FIVEICON -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- STYLE -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
-<body class="relative">
-    <!-- MAIN -->
-    <main class="main-content flex">
-      
-        <!-- ASIDE -->
-        <aside class="aside bg-aside relative">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="#">
-                    <img src="./img/logo.svg" alt="Spotify">
-                </a>
-            </div>
-
-            <!-- Nav -->
-            <div class="nav">
-                <ul>
-                    <li>
-                        <a class="menu-nav" href="#">
-                            <img src="./img/home.svg" alt="home">
-                            <span class="txt-white">Home</span> 
+<body>
+    <!-- WEB APPLICATION -->
+    <div class="app">
+        <!-- MAIN CONTENT -->
+        <div class="main-window">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <section class="sidebar-top">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./img/logo.svg" alt="Spotify">
                         </a>
-                    </li>
-                    <li>
-                        <a class="menu-nav" href="#">
-                            <img src="./img/search.svg" alt="search">
-                            <span>Cerca</span> 
-                        </a>
-                    </li>
-                    <li>
-                        <a class="menu-nav" href="#">
-                            <img src="./img/libreria.svg" alt="libreria">
-                            <span>La tua Libreria</span> 
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Playlist -->
-            <div class="playlist">
-                <h2 class="txt-white uppercase">playlist</h2>
-                <ul>
-                    <li>
-                        <a class="add" href="#"> <!-- Crea Playlist -->
-                            <div class="txt-lightgrey">+</div>
-                            <span>Crea Playlist<span>
-                        </a>
-                    </li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                </ul>
-            </div>
+                    </div>
+                    <!-- Menu Nav -->
+                    <nav class="nav">
+                        <ul>
+                            <li>
+                                <a class="menu-nav" href="#">
+                                    <img src="./img/home.svg" alt="home">
+                                    <span class="txt-white">Home</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-nav" href="#">
+                                    <img src="./img/search.svg" alt="search">
+                                    <span>Cerca</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-nav" href="#">
+                                    <img src="./img/libreria.svg" alt="libreria">
+                                    <span>La tua Libreria</span> 
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Playlist -->
+                    <div class="playlist">
+                        <h2 class="uppercase">playlist</h2>
+                        <ul>
+                            <li>
+                                <a class="add" href="#"> <!-- Crea Playlist -->
+                                    <div class="txt-lightgrey">+</div>
+                                    <span>Crea Playlist<span>
+                                </a>
+                            </li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                        </ul>
+                    </div>
 
-            <!-- Login -->
-            <div class="login">
-                LOGIN
-            </div>
-        </aside>
-        
-        
-        <!-- ALBUM SECTION -->
-        <section class="album bg-album relative">
+                </section>
+                <section class="sidebar-bottom">
+                    <div class="install">
+                        <a href="#">
+                            <i class="far fa-arrow-alt-circle-down"></i>
+                            Install app
+                        </a>
+                    </div>
+                    <div class="user">
+                        <div class="image-profile">
+                            <img src="./img/profile.svg" alt="profile">
+                        </div>
+                        <div class="user-logged txt-white">John Doe</div>
 
-            <!-- Upgrade -->
-            <div class="upgrade">
-                <a class="button" href="#">effettua l'upgrade</a>     
-            </div>
-
-            <!-- Album content -->
-            <div class="album-content">
-                <!-- Album menu -->
-                <div class="album-menu">
-                    <ul>
-                        <li>
-                            <a href="#">in evidenza</a>
-                        </li>
-                        <li>
-                            <a href="#">podcast</a>
-                        </li>
-                        <li>
-                            <a href="#">classifiche</a>
-                        </li>
-                        <li>
-                            <a href="#">generi e moood</a>
-                        </li>
-                        <li>
-                            <a href="#">nuove uscite</a>
-                        </li>
-                        <li>
-                            <a href="#">scopri</a>
-                        </li>
-                    </ul>
+                    </div>
+                </section>
+            </aside>
+            
+            <!-- Content -->
+            <div class="content">
+                <!-- Upgrade -->
+                <div class="content-top-bar">
+                    <button class="txt-white uppercase bold">Effettua l'upgrade</button>
                 </div>
-        
-                <!-- Recently-played -->
-                <h1>Recently played</h1>
-                <div class="recently-played">
-                    <div class="col">
-                        <div class="album">
-                            <img src="./img/metal_lifting.jpg" alt="heavy metal">
-                        </div>
-                        <h3> titolo </h3>
-                        <h4>sottotitolo</h4>
-                    </div>
-                    <div class="col">
-                        <div class="album">
-                            <img src="./img/stranger.jpeg" alt="stranger things">
-                        </div>
-                        <h3> titolo </h3>
-                        <h4>sottotitolo</h4>
-                    </div>
-                    <div class="col">
-                        <div class="album">
-                            <img src="./img/aquietplace.jpeg" alt="a quiet place">
-                        </div>
-                        <h3> titolo </h3>
-                        <h4>sottotitolo</h4>
-                    </div>
-                    <div class="col">
-                        <div class="album">
-                            <img src="./img/split.jpeg" alt="split">
-                        </div>
-                        <h3> titolo </h3>
-                        <h4>sottotitolo</h4>
-                    </div>
-                    <div class="col">
-                        <div class="album">
-                            <img src="./img/cure.jpeg" alt="A cure for wellness">
-                        </div>
-                        <h3> titolo </h3>
-                        <h4>sottotitolo</h4>
-                    </div>
-                    <div class="col">
-                        <div class="album">
-                            <img src="./img/sinister.jpeg" alt="Sinister">
-                        </div>
-                        <h3> titolo </h3>
-                        <h4>sottotitolo</h4>
-                    </div>
+                <!-- Album content -->
+                <div class="scrollable">
+                    <!-- Content Menu -->
+                    <nav class="content-menu">
+                        <ul class="uppercase">
+                            <li>
+                                <a href="#">in evidenza</a>
+                            </li>
+                            <li>
+                                <a href="#">podcast</a>
+                            </li>
+                            <li>
+                                <a href="#">classifiche</a>
+                            </li>
+                            <li>
+                                <a href="#">generi e moood</a>
+                            </li>
+                            <li>
+                                <a href="#">nuove uscite</a>
+                            </li>
+                            <li>
+                                <a href="#">scopri</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Recently-played -->
+                    <section class="content-category">
+                        <h1>Recently played</h1>
+                        <ul class="album-list">
+                            <li class="album">
+                                <img src="./img/metal_lifting.jpg" alt="heavy metal">
+                                <h2>Heavy Metal</h2>
+                                <h3>Subtitle</h3>
+                            </li>
+                            <li class="album">
+                                <img src="./img/stranger.jpeg" alt="stranger things">
+                                <h2>Stranger Thing, Vol. 1 (a Netflix Original Series Soundtrack)</h2>
+                                <h3>Kyle Dixon & Micheal Stein</h3>
+                            </li>
+                            <li class="album">
+                                <img src="./img/aquietplace.jpeg" alt="a quiet place">
+                                <h2>A quite place</h2>
+                                <h3>Subtitle</h3>
+                            </li>
+                            <li class="album">
+                                <img src="./img/split.jpeg" alt="split">
+                                <h2>Split</h2>
+                                <h3>Subtitle</h3>
+                            </li>
+                            <li class="album">
+                                <img src="./img/cure.jpeg" alt="A cure for wellness">
+                                <h2>A cure for wellness</h2>
+                                <h3>Subtitle</h3>
+                            </li>
+                            <li class="album">
+                                <img src="./img/sinister.jpeg" alt="Sinister">
+                                <h2>Sinister</h2>
+                                <h3>Subtitle</h3>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- Created-for -->
+                    <section class="content-category">
+                        <h1>Creato per John Doe</h1>
+                        <h3>Più ascoltati, più accurati saranno i suggerimenti.</h3>
+                        <ul class="album-list">
+                            <li class="album">
+                                <img src="./img/radar.jpeg" alt="Il tuo release radar">
+                                <h2>Release Radar</h2>
+                            </li>
+                            <li class="album">
+                                <img src="./img/mixdaily.jpeg" alt="Daily mix1">
+                                <h2>Daily Mix 1</h2>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- Popular-artist -->
+                    <section class="content-category">
+                        <h1>Artisti più popolari</h1>
+                        <h3>Più ascoltati, più accurati saranno i suggerimenti.</h3>
+                        <ul class="album-list">
+                            <li class="album">
+                                <img class="album-circle" src="./img/youg.jpeg" alt="Lana del Rey">
+                                <h2>Lana del Rey</h2>
+                            </li>
+                            <li class="album">
+                                <img class="album-circle" src="./img/einaudi.jpeg" alt="Enaudi">
+                                <h2>Ludovico Einaudi</h2>
+                            </li>
+                        </ul>
+                    </section>
                 </div>
-        
-                <!-- Created-for -->
-                <div class="created"></div>
-        
-                <!-- Popular-artist -->
-                <div class="popular-art"></div>
             </div>
-        </section>
-              
-    </main>
+        </div>
 
-    <!-- FOOTER / PLAYER -->
-    <footer class="player bg-player relative">
+        <!-- PLAYER -->
+        <div class="player">
+            <div class="album">album</div>
+            <div class="controller">controller</div>
+            <div class="audio">audio</div>
+        </div>
 
-        <!-- Song-played -->
-        <div class="song-played"></div>
-
-        <!-- Reproduction -->
-        <div class="reproduction"></div>
-
-        <!-- Volume -->
-        <div class="volume"></div>
-
-    </footer>
+    </div>
 </body>
 </html>
