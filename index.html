@@ -22,6 +22,28 @@
         <div class="main-window bg-album">
             <!-- Sidebar -->
             <aside class="sidebar bg-aside">
+
+                <!-- START Sidebar mobile versione ---------------------------------->
+                <div class="sidebar-mobile-xs">
+                    <!-- Sidebar-TOP mobile versione -->
+                    <div class="sidebar-top-xs">
+                        <img class="logo-small" src="./img/logo-small.svg" alt="logo">
+                        <img src="./img/home.svg" alt="home">
+                        <img src="./img/search.svg" alt="search">
+                        <img src="./img/libreria.svg" alt="libreria">
+                    </div>
+                    <!-- Sidebar-BOTTOM mobile versione -->
+                    <div class="sidebar-bottom-xs">
+                        <img src="./img/download.svg" alt="download">
+                        <div class="user">
+                            <div class="image-profile">
+                                <img src="./img/profile.svg" alt="profile">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Sidebar mobile version------------------------------------->
+
                 <section class="sidebar-top">
                     <!-- Logo -->
                     <div class="logo">
@@ -57,7 +79,7 @@
                         <h2 class="uppercase">playlist</h2>
                         <ul>
                             <li>
-                                <a class="add" href="#"> <!-- Crea Playlist -->
+                                <a class="add" href="#"> <!-- Add new Playlist -->
                                     <div class="txt-lightgrey">+</div>
                                     <span>Crea Playlist<span>
                                 </a>
@@ -85,12 +107,11 @@
                             <img src="./img/profile.svg" alt="profile">
                         </div>
                         <div class="user-logged txt-white">John Doe</div>
-
                     </div>
                 </section>
             </aside>
             
-            <!-- Content -->
+            <!-- CONTERT -->
             <div class="content">
                 <!-- Upgrade -->
                 <div class="content-top-bar">
@@ -111,7 +132,7 @@
                                 <a href="#">classifiche</a>
                             </li>
                             <li>
-                                <a href="#">generi e moood</a>
+                                <a href="#">generi e mood</a>
                             </li>
                             <li>
                                 <a href="#">nuove uscite</a>
@@ -228,6 +249,7 @@
                     <i class="far fa-folder hover-white"></i>
                 </div>
             </div>
+            <!-- Controller -->
             <div class="controller txt-white">
                 <!-- Player control -->
                 <div class="player-icons">
@@ -241,11 +263,17 @@
                 <div class="player-bar">
                     <span>0.25</span>
                     <div class="bar"></div>
+                    <span>4:35</span>
                 </div>
             </div>
-            <div class="audio">audio</div>
+            <!-- Audio controller -->
+            <div class="audio txt-white">
+                <i class="fas fa-list"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-volume-up"></i>
+                <div class="bar"></div>
+            </div>
         </div>
-
     </div>
 </body>
 </html>
