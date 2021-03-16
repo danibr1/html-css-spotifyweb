@@ -19,9 +19,9 @@
     <!-- WEB APPLICATION -->
     <div class="app">
         <!-- MAIN CONTENT -->
-        <div class="main-window">
+        <div class="main-window bg-album">
             <!-- Sidebar -->
-            <aside class="sidebar">
+            <aside class="sidebar bg-aside">
                 <section class="sidebar-top">
                     <!-- Logo -->
                     <div class="logo">
@@ -213,9 +213,36 @@
         </div>
 
         <!-- PLAYER -->
-        <div class="player">
-            <div class="album">album</div>
-            <div class="controller">controller</div>
+        <div class="player bg-player">
+            <!-- Player left - selected album -->
+            <div class="album">
+                <div class="cover-selected-album">
+                    <img src="./img/sinister.jpeg" alt="sinister">
+                    <div class="title-selected-album">
+                        <h4 class="txt-white">Sinister</h4>
+                        <h5>Brano nome</h5>
+                    </div>
+                </div>
+                <div class="icons">
+                    <i class="far fa-heart hover-white"></i>
+                    <i class="far fa-folder hover-white"></i>
+                </div>
+            </div>
+            <div class="controller txt-white">
+                <!-- Player control -->
+                <div class="player-icons">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i id="play" class="far fa-play-circle"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo-alt"></i>
+                </div>
+                <!-- Player bar -->
+                <div class="player-bar">
+                    <span>0.25</span>
+                    <div class="bar"></div>
+                </div>
+            </div>
             <div class="audio">audio</div>
         </div>
 
