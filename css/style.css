@@ -295,6 +295,30 @@ list-style: none;
     width: 100%;
 }
 
+/* Overlay album */
+.album-list .album .play{
+    position: relative;
+}
+.album-list .album .play:hover::after{
+    display: inline-block;
+}
+.album-list .album .play:hover img{
+    filter: brightness(0.5);
+    transition: 0.4s;
+    transform: scale(1.05);
+}
+.album-list .album .play:hover::after{
+    content: "\f144";
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+}
+
+
 
 /* #################################################
     PLAYER
