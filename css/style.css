@@ -30,6 +30,12 @@ h3{
     font-size: 0.8rem;
     margin-bottom: 0.8rem;
 }
+h4{
+    font-size: 0.8rem;
+}
+h5{
+    font-size: 0.6rem;
+}
 a{
     text-decoration: none;
     color: #7d7f84;
@@ -81,7 +87,6 @@ list-style: none;
 .main-window {
     height: calc(100vh - 80px);
     display: flex;
-    background: #141922;
 }
 
 .sidebar,
@@ -94,7 +99,6 @@ list-style: none;
 ####################################################*/
 .sidebar{
     min-width: 230px;
-    background: #000;
 }
 
 /* Sidebar-TOP  */
@@ -203,9 +207,9 @@ list-style: none;
 }
 
 
-/* #################################################
+/* ###################################################
     CONTENT
-####################################################*/
+######################################################*/
 .content {
     position: relative;
     flex-grow: 1;
@@ -295,7 +299,7 @@ list-style: none;
     width: 100%;
 }
 
-/* Overlay album */
+/* Overlay album ----------------------------------------*/
 .album-list .album .play{
     position: relative;
 }
@@ -320,9 +324,9 @@ list-style: none;
 
 
 
-/* #################################################
-    PLAYER
-####################################################*/
+/* #####################################################
+    MAIN PLAYER
+########################################################*/
 .player{
     display: flex;
     justify-content: space-between;
@@ -330,12 +334,82 @@ list-style: none;
     height:80px;
     background:#222;
 }
-
 .player .album,
 .player .audio{
-    flex-basis: 230px;
-    background: #012;
+    flex-basis: 200px;
+    margin: 0 10px
 }
+.player .album {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+/* Player left - selected album ----------------------*/
+.player .album .cover-selected-album{
+    display: flex;
+    align-items:center;
+    height:45px;
+}
+.player .album .cover-selected-album img{
+    max-height: 100%;
+    margin-right: 10px;
+}
+.player .album .cover-selected-album h5:hover{
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+}
+.player .album .icons i:first-child{
+    margin-right: 10px;
+}
+.player .album .icons i:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Player  ---------------------------------------------------------- */
+.player .controller{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Player control -------------------------------------------------- */
+.player .controller .player-icons{
+    display:flex;
+    align-items: center;
+    padding: 10px;
+}
+.player .controller .player-icons i{
+    margin-right:20px;
+    cursor: pointer;
+}
+.player .controller .player-icons i:hover{
+    transform: scale(1.2);
+}
+.player .controller .player-icons i:last-child{
+    margin-right:0;
+}
+.player .controller .player-icons .fa-play-circle{
+    font-size: 1.8rem;
+}
+
+/* Player bar ------------------------------------------------------ */
+.player .controller .player-bar{
+    display:flex;
+    align-items: center;
+    padding: 10px;
+    flex-basis: 35%;
+}
+.player .controller .player-bar span{
+    font-size: 0.7rem;
+}
+.player .controller .player-bar .bar{
+    margin: 0 5%;
+    flex-grow: 1;
+}
+
 
 
 
